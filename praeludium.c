@@ -53,6 +53,7 @@ Note that C# is not used, and could be elided.
 */
 
 // gcc praeludium.c -o praeludium && ./praeludium | aplay -f cd
+// ./praeludium | ffmpeg -f s16le -ar 44100 -ac 2 -i - -acodec copy praeludium.wav
 static double ff[] = { 110.0, 116.5, 123.5, 130.8, 138.6, 146.8, 155.6, 164.8,
     174.6, 185.0, 196.0, 207.7 };
 static char const* n1 = "8<?DH8:AFI7:?FI8<?DH8<AHM8:>AF7:?FK78<?D58<?D.A:>D3C:?C36<?E15:AF"
